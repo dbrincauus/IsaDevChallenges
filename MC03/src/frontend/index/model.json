@@ -1,0 +1,25 @@
+{
+    "canales": {
+        "dbgames": {
+            "titulo": " DBGames - Noticias de videojuegos, gameplays y más",
+            "logo": "https://yt3.ggpht.com/ytc/AAUvwnh3yE2BgOZmepJht3T-k6LRzPih9KwV4mbk1g4dYg=s88-c-k-c0x00ffffff-no-rj",
+            "presentacion": "https://www.youtube.com/embed/bZRAHo4QFBk",
+            "videos": [
+                {
+                    "nombre": "ESPECIAL 25 ANIVERSARIO POKEMON",
+                    "url": "https://www.youtube.com/embed/14ykJlD7Apc"
+                },
+                {
+                    "nombre": "REVIEW de COOK, SERVE, DELICIOUS! 3?! - El MEJOR simulador de cocina!?",
+                    "url": "https://www.youtube.com/embed/ED_747VvCK4"
+                },
+                {
+                    "nombre": "ENTREVISTA A... Periodista de Videojuegos - Jose Manuel Fernandez 'Spidey'",
+                    "url": "https://www.youtube.com/embed/hzbuPO4eAcg"
+                }
+            ]
+        }
+    }
+}
+
+

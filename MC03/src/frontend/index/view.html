@@ -1,0 +1,41 @@
+<style>
+</style>
+
+
+<div>
+    <div ng-repeat="canal in model.canales">
+        <div>
+            <img style="float:left; margin-top: 8px;" src ="{{canal.logo}}" width="50px">
+            <h3 style="float:left; margin-left: 10px;">{{canal.titulo}}</h3>
+            <br><br><br><br><br>
+            <p>Canal dedicado a las noticas, reviews, podcasts, gameplays... Todo aquello que te puedas imaginar del mundo de los videojuegos y mucho más!!</p>
+            <div>
+                <h2>Video de presentacion</h2>
+                <iframe width="560" height="315" src="{{canal.presentacion}}" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+        <div>
+            <br><br>
+            <h2>Lista de videos</h2>
+            <iframe id="vidChange" width="560" height="315" src="{{canal.videos[0].url}}" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+            <button ng-click="nextVid(canal.videos);" style="border-radius: 8px; padding: 10px 24px; font-size: 14px; background-color: #008CBA; padding-top: 10px; color: white; float: bottom;">Siguiente Video</button>
+        </div>
+
+        
+        <div>
+            <br><br><br>
+            <h2>Añadir videos</h2>
+            
+            <p id="textito"></p>
+            <p>Titulo:</p><input id="VName"/>
+            <p style="margin-top: 25px;">Enlace:</p><input id="VUrl"/>
+            <div>
+                <button ng-click="insertVid(canal);" style="margin-top: 25px; border-radius: 8px; padding: 10px 24px; font-size: 14px; background-color: #008CBA; padding-top: 10px; color: white; ">Añadir video</button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
