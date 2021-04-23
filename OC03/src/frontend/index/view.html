@@ -1,0 +1,88 @@
+<style>
+</style>
+
+<div>
+    <datalist id="cartas">
+        <option value="AH"></option>
+        <option value="2H"></option>
+        <option value="3H"></option>
+        <option value="4H"></option>
+        <option value="5H"></option>
+        <option value="6H"></option>
+        <option value="7H"></option>
+        <option value="8H"></option>
+        <option value="9H"></option>
+        <option value="10H"></option>
+        <option value="JH"></option>
+        <option value="QH"></option>
+        <option value="KH"></option>
+        <option value="AS"></option>
+        <option value="2S"></option>
+        <option value="3S"></option>
+        <option value="4S"></option>
+        <option value="5S"></option>
+        <option value="6S"></option>
+        <option value="7S"></option>
+        <option value="8S"></option>
+        <option value="9S"></option>
+        <option value="10S"></option>
+        <option value="JS"></option>
+        <option value="QS"></option>
+        <option value="KS"></option>
+        <option value="AD"></option>
+        <option value="2D"></option>
+        <option value="3D"></option>
+        <option value="4D"></option>
+        <option value="5D"></option>
+        <option value="6D"></option>
+        <option value="7D"></option>
+        <option value="8D"></option>
+        <option value="9D"></option>
+        <option value="10D"></option>
+        <option value="JD"></option>
+        <option value="QD"></option>
+        <option value="KD"></option>
+        <option value="AC"></option>
+        <option value="2C"></option>
+        <option value="3C"></option>
+        <option value="4C"></option>
+        <option value="5C"></option>
+        <option value="6C"></option>
+        <option value="7C"></option>
+        <option value="8C"></option>
+        <option value="9C"></option>
+        <option value="10C"></option>
+        <option value="JC"></option>
+        <option value="QC"></option>
+        <option value="KC"></option>
+    </datalist>
+
+    <h3>{{ganador}}</h3>
+    <h1>Bote</h1>
+    <input id="boteInp" type="number" />
+    <br><br><br>
+
+    <div>
+        <div id="jugadores">
+            <div id="player1">
+                <h1>Jugador</h1>
+                <input id="player1name" />
+                <br>
+                <h1>Cartas</h1>
+                <input id="player11" list="cartas" name="carta" type="text">
+                <input id="player12" list="cartas" name="carta" type="text">
+                <input id="player13" list="cartas" name="carta" type="text">
+                <input id="player14" list="cartas" name="carta" type="text">
+                <input id="player15" list="cartas" name="carta" type="text">
+                <br>
+                <h1>Apuesta</h1>
+                <input id="player1a" type="number" />
+                <br>
+            </div>
+        </div>
+        <button ng-click="insertPar();">Añadir participante</button>
+    </div>
+
+    <button ng-click="calcular();">Calcular</button>
+
+</div>

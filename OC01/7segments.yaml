@@ -1,0 +1,82 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 7 segments LCD display
+  description: >-
+    API para imprimir un 7 segmentos con una lista de numeros a un tamaño indicado
+  contact:
+    name: David
+    email: davbrican@alum.ues.es
+    url: https://github.com/dbrincauus
+  license:
+    name: MIT
+    url: http://opensource.org/licenses/MIT
+paths:
+  /api/v1/examples:
+    post:
+      description: Creates a LCD view from numbers and size
+      operationId: LCDCreate
+      responses:
+        201:
+          description: example created
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/errorModel'
+      requestBody:
+        x-name: example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/example'
+        description: Example to be created
+        required: true
+    options:
+      description: options
+      operationId: LCDOptions
+      responses:
+        201:
+          description: example created
+        default:
+          description: unexpected error
+          content:
+            text/plain:
+              schema:
+                type: string
+      requestBody:
+        x-name: example
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/example'
+        description: Example to be created
+        required: true
+components:
+  schemas:
+    errorModel:
+      type: array
+      required:
+        - lista
+      properties:
+        lista:
+          type: array
+    example:
+      type: object
+      properties:
+        lista:
+          type: array
+          uniqueItems: true
+          minItems: 1
+          items:
+            required:
+              - t
+              - n
+            properties:
+              t:
+                type: number
+              n:
+                type: number
+      required:
+        - lista
